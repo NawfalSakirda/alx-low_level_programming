@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet_x10 - check the code.
  *
- * Description: prints the alphabets
+ * Description: prints the alphabets 10 times in seperate lines using _putchar
  */
 
 void print_alphabet_x10(void)
