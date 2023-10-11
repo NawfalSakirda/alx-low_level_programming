@@ -12,7 +12,7 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	if ((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0))
+	if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0))
 	{
 		if (month >= 3)
 		{
