@@ -49,7 +49,7 @@ char *cap_string(char *s)
 	{
 		if (delim(*s))
 			del = 1;
-		else if (lower(*S) && del)
+		else if (lower(*s) && del)
 		{
 			*s -= 32;
 			del = 0;
