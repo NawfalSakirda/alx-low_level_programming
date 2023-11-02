@@ -8,7 +8,7 @@
  * @s2: pointer to a string
  * @n: n bytes of s2
  *
- * Return: pointer to s1, followed by the first n bytes of s2 terminated by \0
+ * Return: pointer to s1, followed by the first n bytes of s2 ends by null
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -49,5 +49,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 		c[l1 + l2] = '\0';
 	}
+
 	return (c);
 }
