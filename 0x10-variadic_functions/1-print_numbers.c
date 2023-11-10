@@ -4,24 +4,24 @@
 /**
  * print_numbers - prints numbers, followed by a new line
  *
- * @seperator: string to be printed between numbers
+ * @separator: string to be printed between numbers
  * @n: the number of ints passed to the function
  */
 
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list arg;
 	unsigned int i;
 
-	if (seperator == NULL)
-		seperator = "";
+	if (separator == NULL)
+		separator = "";
 
 	va_start(arg, n);
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(arg, int));
 		if (i != n - 1)
-			printf("%s", seperator);
+			printf("%s", separator);
 	}
 	va_end(arg);
 
